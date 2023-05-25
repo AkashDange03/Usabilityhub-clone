@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --top-banner:#e74694;
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-block:20px;
+
+}
+
+
+body{
+    font-family: 'poppins',sans-serif;
+    color:var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display:inline-block;
+}
+
+li{
+    list-style: none;
+    padding-top: 12px;
+}
+
+
+/* utility classes */
+
+.primary-button{
+    background-color: var(--accent-color);
+    color:white !important;
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: none;
+}
+
+.secondary-button{
+    padding: 12px 24px;
+    background-color: white;
+    border-radius: 6px;
+    border-color: var(--accent-color-dark);
+    color: var(--accent-color-dark);
+    border: 1px solid;
+
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+    transition: 0.2sec ease-out;
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transition: 0.2sec ease-out;
+}
+
+.flex{
+    display:flex;
+    justify-content: center;
+}
+
+.small-bold-text{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+
+.container{
+    max-width: 1180px;
+    margin-inline:auto;
+    padding-inline:var(--padding-inline-block);  
+    overflow: hidden;
+}
+
+.hover-menu-items{
+    color: var(--primary-text-color);
+
+}
+
+.hover-menu-items:hover{
+    color: var(--accent-color);
+    transition: 0.2sec ease-out;
+}
+/* css */
+
+.banner-text{
+    text-align: center;
+    color: white;
+    padding:15px 30px;
+}
+
+.header-section{
+    justify-content: center;
+    gap:50px;
+}
+.header-left h1{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.header-right img{
+    width: 100%;
+
+}
+
+.header-left p{
+    margin-bottom: 20px;
+}
+.header-left{
+    width: 100%;
+    margin: auto 0;
+
+}
+.menu-items{
+    justify-content: end;
+    gap:40px;
+
+}
+
+.menus{
+    flex-basis:730px;
+}
+
+.hamberger{
+    display:none;
+}
+
+.main-navbar{
+    padding-top: 25px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.nav-logo img{
+    width:200px;
+}
+
+
+.top-banner{
+    background-image: url(./images/asset\ 32.png);
+    background-repeat: repeat;
+    background-size:300px;
+    background-color:var(--top-banner);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.companies{
+ text-align: center;
+ margin-top:50px;
+}
+
+.companies p{
+    color: var(--primary-text-color);
+}
+
+.company-logos{
+    justify-content: space-between;
+    padding: 24px 0;
+    flex-wrap: wrap;
+}
+
+.company-logos img{
+    height: 45px;
+    object-fit: cover;
+}
+
+
+.main-features{
+    padding: 2.5rem 1.2rem;
+}
+.features-title{
+    text-align: center;
+    padding: 20px ;
+}
+
+.features-title h2{
+    font-size: 2rem;
+}
+.features-card{
+    text-align: center;
+}
+
+.features-card img{
+    width: 40px;
+}
+
+.features-card-area{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    row-gap: 30px;
+}
+
+.features-sections{
+    background-image: url(./images/asset\ 34.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.left-big-feature img{
+    width: 100%;
+}
+
+.main-big-feature{
+    justify-content: space-between;
+    gap: 80px;
+    padding: 2.5rem 1.2rem;
+}
+
+.right-big-feature > h2{
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+
+.right-big-feature > p{
+    text-align: justify;
+    margin-bottom: 11px;
+}
+
+.right-big-feature img{
+    width:30%;
+    margin-bottom: 30px;
+}
+
+.right-big-feature{
+    width:100%;
+}
+
+.profile{
+    padding-top: 1.2rem;
+}
+.profile h2{
+    padding-top: 0.5rem;
+    padding-bottom: 0px;
+}
+.profile p{
+    padding-bottom: 0.5rem;
+}
+.profile img{
+    float:left;
+    margin-right: 10px;
+    width: 60px;
+}
+.main-examples{
+    padding: 2.5rem 1.2rem;
+}
+.example-area{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.example-card{
+    width: 23%;
+    height: 300px;
+    position: relative;
+    background-color: black;
+    background: linear-gradient( rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(./images/asset\ 36.jpeg);
+    
+}
+
+.example-card:hover{
+    box-shadow: 0 0  10px #8888;
+    transition: 0.2 ease-out;
+}
+
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.participation-section{
+    background-color: var(--primary-text-color);
+    padding: 2.5rem 1.2rem;
+}
+
+.participation-section h2{
+    color:white;
+    padding: 0;
+    font-weight: normal;
+}
+
+.participation-section p{
+    color: #b9cde4;
+    padding-bottom: 30px;
+}
+
+.participation-list{
+    color:#b9cde4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    column-gap: 30px;
+}
+
+.list{
+    padding-left: 20px;
+}
+
+.participation-list li{
+    color:#b9cde4;
+    list-style-type: disc;
+}
+
+.learn-more-button{
+    margin-top: 30px;
+}
+
+.main-participation-section{
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cta-main-section{
+    padding: 2.5rem 1.2rem;
+}
+.cta-title{
+    font-size: 40px;
+    padding: 2.5rem 1.2rem;
+    font-weight:normal ;
+}
+
+.cta-desc{
+    padding-bottom: 2.5rem;
+}
+
+.get-started{
+    margin-bottom: 2.5rem;
+}
+
+footer{
+    background-color:#ebf2fa;
+}
+.footer-logo img{
+    width: 100%;
+    padding-right: 30%;
+}
+.footer-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+    padding: 5rem 1.2;
+}
+
+.footer-product h3{
+    font-size:20px;
+    font-weight: bold;
+}
+
+.footer-product li{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.main-subfooter{
+   gap: 10%;
+   padding: 1.2rem 1.2rem;
+  
+}
+
+.conditions{
+    font-size: 16px;
+    gap: 30px;
+}
+.subfooter-logos{
+  gap: 30px;
+}
+.subfooter-logos img{
+    width: 15px;
+    display: inline-block;
+    
+}
